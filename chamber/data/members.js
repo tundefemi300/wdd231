@@ -1,0 +1,65 @@
+[
+    {
+        "name": "TechNova Solutions",
+        "address": "12 Bodija Road, Ibadan",
+        "phone": "+234 801 111 1111",
+        "website": "https://technova.com",
+        "image": "technova.jpg",
+        "membership": 3,
+        "description": "Technology consulting company."
+    },
+    {
+        "name": "FreshMart Stores",
+        "address": "45 Dugbe Street, Ibadan",
+        "phone": "+234 802 222 2222",
+        "website": "https://freshmart.com",
+        "image": "freshmart.jpg",
+        "membership": 2,
+        "description": "Retail and grocery store."
+    },
+    {
+        "name": "Skyline Hotels",
+        "address": "Ring Road, Ibadan",
+        "phone": "+234 803 333 3333",
+        "website": "https://skylinehotels.com",
+        "image": "skyline.jpg",
+        "membership": 3,
+        "description": "Luxury accommodation services."
+    },
+    {
+        "name": "Green Farms",
+        "address": "Iwo Road, Ibadan",
+        "phone": "+234 804 444 4444",
+        "website": "https://greenfarms.com",
+        "image": "greenfarms.jpg",
+        "membership": 1,
+        "description": "Agricultural products supplier."
+    },
+    {
+        "name": "Elite Fashion",
+        "address": "Challenge Area, Ibadan",
+        "phone": "+234 805 555 5555",
+        "website": "https://elitefashion.com",
+        "image": "fashion.jpg",
+        "membership": 2,
+        "description": "Fashion and apparel company."
+    },
+    {
+        "name": "Swift Logistics",
+        "address": "Jericho, Ibadan",
+        "phone": "+234 806 666 6666",
+        "website": "https://swiftlogistics.com",
+        "image": "logistics.jpg",
+        "membership": 1,
+        "description": "Delivery and logistics services."
+    },
+    {
+        "name": "Prime Media",
+        "address": "UI Area, Ibadan",
+        "phone": "+234 807 777 7777",
+        "website": "https://primemedia.com",
+        "image": "media.jpg",
+        "membership": 3,
+        "description": "Digital marketing agency."
+    }
+]

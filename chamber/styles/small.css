@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header,
+footer {
+    background: #003049;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.view-buttons {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#members.grid-view {
+    display: grid;
+    gap: 1rem;
+}
+
+#members.list-view {
+    display: block;
+}
+
+#members section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#members img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}

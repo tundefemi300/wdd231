@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 – Chamber Directory – Ibadan Chamber of Commerce</title>
+
+    <meta name="description"
+        content="WDD 231 Chamber of Commerce Directory project featuring local businesses, member listings, and responsive web development using HTML, CSS, JavaScript, and JSON.">
+
+    <meta name="author" content="Oluwafemi Akanbi">
+
+    <meta property="og:title" content="Ibadan Chamber of Commerce Directory">
+    <meta property="og:description"
+        content="Explore local business listings and chamber members in the Ibadan Chamber of Commerce directory project.">
+
+    <meta property="og:image"
+        content="https://yourusername.github.io/wdd231/chamber/images/chamber-banner.jpg">
+
+    <meta property="og:url"
+        content="https://yourusername.github.io/wdd231/chamber/directory.html">
+
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>Ibadan Chamber of Commerce</h1>
+
+    <button id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="#">Discover</a>
+        <a href="#">Join</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="view-buttons">
+        <button id="gridBtn">Grid View</button>
+        <button id="listBtn">List View</button>
+    </section>
+
+    <section id="members" class="grid-view"></section>
+
+</main>
+
+<footer>
+    <p>
+        Ibadan Chamber of Commerce<br>
+        15 Ring Road, Ibadan, Nigeria<br>
+        info@ibadanchamber.org<br>
+        +234 800 000 0000
+    </p>
+
+    <p>
+        &copy; <span id="year"></span> | Your Full Name | WDD 231
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+<script src="scripts/directory.js"></script>
+</body>
+</body>
+
+</html>
+
+git config --global user.email "tundefemi300@gmail.com"
+ git config --global user.name "tundefemi300"
