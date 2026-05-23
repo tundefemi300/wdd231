@@ -3,88 +3,306 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD 231 – Chamber Directory – Ibadan Chamber of Commerce</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Ibadan Chamber of Commerce</title>
 
     <meta name="description"
-        content="WDD 231 Chamber of Commerce Directory project featuring local businesses, member listings, and responsive web development using HTML, CSS, JavaScript, and JSON.">
+        content="Ibadan Chamber of Commerce website showcasing local businesses, events, weather updates, and networking opportunities.">
 
-    <meta name="author" content="Oluwafemi Akanbi">
+    <meta name="author"
+        content="Oluwafemi Akanbi">
 
-    <meta property="og:title" content="Ibadan Chamber of Commerce Directory">
+    <meta property="og:title"
+        content="Ibadan Chamber of Commerce">
+
     <meta property="og:description"
-        content="Explore local business listings and chamber members in the Ibadan Chamber of Commerce directory project.">
+        content="Explore local businesses, events, and opportunities in Ibadan.">
 
     <meta property="og:image"
-        content="https://yourusername.github.io/wdd231/chamber/images/chamber-banner.jpg">
+        content="images/chamber-banner.jpg">
 
     <meta property="og:url"
-        content="https://yourusername.github.io/wdd231/chamber/directory.html">
+        content="https://tundefemi300.github.io/wdd231/chamber/">
 
-    <meta property="og:type" content="website">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet"
+        href="styles/normalize.css">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet"
+        href="styles/small.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet"
+        href="styles/larger.css">
+
+    <script src="scripts/chamber.js"
+        defer></script>
 </head>
 
 <body>
-<header>
-    <h1>Ibadan Chamber of Commerce</h1>
 
-    <button id="menuBtn">☰</button>
+    <header>
 
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="directory.html" class="active">Directory</a>
-        <a href="#">Discover</a>
-        <a href="#">Join</a>
-    </nav>
-</header>
+        <div class="top-bar">
 
-<main>
+            <div class="logo-area">
 
-    <section class="view-buttons">
-        <button id="gridBtn">Grid View</button>
-        <button id="listBtn">List View</button>
+                <img src="images/logo.png"
+                    alt="Ibadan Chamber Logo">
+
+                <div>
+                    <h1>Ibadan Chamber</h1>
+                    <p>of Commerce</p>
+                </div>
+
+            </div>
+
+            <button id="menuBtn"
+                aria-label="Menu Button">
+
+                ☰
+
+            </button>
+
+        </div>
+
+        <nav id="navMenu"
+            class="navigation">
+
+            <a href="index.html"
+                class="active">
+                Home
+            </a>
+
+            <a href="directory.html">
+                Directory
+            </a>
+
+            <a href="join.html">
+                Join
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <img src="images/chamber-banner.png"
+            alt="Ibadan City Banner">
+
+        <button class="hero-btn">
+            Keynote Tickets
+        </button>
+
     </section>
 
-    <section id="members" class="grid-view"></section>
+    <main>
 
-</main>
+        <h2>Home</h2>
 
-<footer>
-    <p>
-        Ibadan Chamber of Commerce<br>
-        15 Ring Road, Ibadan, Nigeria<br>
-        info@ibadanchamber.org<br>
-        +234 800 000 0000
-    </p>
+        <section class="info-grid">
 
-    <p>
-        &copy; <span id="year"></span> | Your Full Name | WDD 231
-    </p>
+            <article class="card">
 
-    <p id="lastModified"></p>
-</footer>
+                <h3>Events</h3>
 
-<script src="scripts/directory.js"></script>
-</body>
+                <div class="card-content">
+
+                    <p>
+                        Chamber networking event this Friday.
+                    </p>
+
+                    <p>
+                        Business growth seminar next week.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <h3>Current Weather</h3>
+
+                <div class="weather">
+
+                    <img src="images/weather.jpg"
+                        alt="Weather Icon">
+
+                    <div>
+
+                        <p>75°F</p>
+
+                        <p>Partly Cloudy</p>
+
+                        <p>High: 85°</p>
+
+                        <p>Low: 52°</p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <h3>Weather Forecast</h3>
+
+                <div class="card-content">
+
+                    <p>Today: 90°F</p>
+
+                    <p>Wednesday: 89°F</p>
+
+                    <p>Thursday: 68°F</p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="members"
+            class="members-grid">
+
+            <article class="member-card">
+
+                <h3>TechNova Solutions</h3>
+
+                <img src="images/technova.jpg"
+                    alt="TechNova">
+
+                <p>
+                    EMAIL: info@technova.com
+                </p>
+
+                <p>
+                    PHONE: +234 801 111 1111
+                </p>
+
+                <p>
+                    URL: technova.com
+                </p>
+
+            </article>
+
+            <article class="member-card">
+
+                <h3>FreshMart Stores</h3>
+
+                <img src="images/freshmart.jpg"
+                    alt="FreshMart">
+
+                <p>
+                    EMAIL: info@freshmart.com
+                </p>
+
+                <p>
+                    PHONE: +234 802 222 2222
+                </p>
+
+                <p>
+                    URL: freshmart.com
+                </p>
+
+            </article>
+
+            <article class="member-card">
+
+                <h3>Skyline Hotels</h3>
+
+                <img src="images/skyline.jpg"
+                    alt="Skyline Hotels">
+
+                <p>
+                    EMAIL: info@skyline.com
+                </p>
+
+                <p>
+                    PHONE: +234 803 333 3333
+                </p>
+
+                <p>
+                    URL: skyline.com
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+
+                <h3>Ibadan Chamber of Commerce</h3>
+
+                <p>15 Ring Road, Ibadan</p>
+
+                <p>info@ibadanchamber.org</p>
+
+                <p>(+234) 800-000-0000</p>
+
+            </div>
+
+            <div class="socials">
+
+                <a href="#">
+                    <img src="images/facebook.jpg"
+                        alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="images/twitter.png"
+                        alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="images/linkedin.png"
+                        alt="LinkedIn">
+                </a>
+
+            </div>
+
+            <div class="footer-dev">
+
+                <p>
+                    WDD231 Class Project
+                </p>
+
+                <p>
+                    © <span id="year"></span>
+                    Oluwafemi Akanbi
+                </p>
+
+                <p id="lastModified"></p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
-
-<!-- git config --global user.email "tundefemi300@gmail.com"
- git config --global user.name "tundefemi300" -->
