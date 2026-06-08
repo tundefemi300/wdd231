@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+.join-container {
+    display: grid;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea,
+select {
+    padding: .6rem;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
