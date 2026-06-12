@@ -1,170 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join the Chamber</title>
 
-<link rel="stylesheet" href="styles/join.css">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join - Ibadan Chamber of Commerce</title>
+
+    <meta name="description" content="Discover local businesses, events, networking, and chamber resources in Ibadan, Nigeria now.">
+
+    <meta name="author" content="Oluwafemi Akanbi">
+
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:description" content="Explore local businesses, events, and opportunities in Ibadan.">
+
+    <meta property="og:image" content="https://tundefemi300.github.io/wdd231/chamber/images/chamber-banner.png">
+
+    <meta property="og:url" content="https://tundefemi300.github.io/wdd231/chamber/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/chambers.js" defer></script>
 <script src="scripts/join.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>Join Our Chamber of Commerce</h1>
-</header>
+    <header>
 
-<main class="join-container">
+        <div class="top-bar">
 
-    <section class="form-section">
+            <div class="logo-area">
+
+                <img src="images/logo.png" alt="Ibadan Chamber Logo">
+
+                <div>
+                    <h2>Ibadan Chamber</h2>
+                    <p>of Commerce</p>
+                </div>
+
+            </div>
+
+            <button id="menuBtn" aria-label="Menu Button">
+
+                ☰
+
+            </button>
+
+        </div>
+
+        <nav id="navMenu" class="navigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="directory.html">
+                Directory
+            </a>
+
+            <a href="join.html">
+                Join
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <img src="images/chamber-banner.png" alt="Ibadan City">
+
+        <div class="hero-content">
+           
+        
+     <h2>Ibadan Chamber of Commerce</h2>
+   
+         
+        </div>
+    </section>
+
+<main class="join-page">
+
+    <h1>Join the Ibadan Chamber of Commerce</h1>
+
+    <div class="join-layout">
 
         <form method="get" action="thankyou.html">
 
             <label>
                 First Name
-                <input type="text"
-                       name="firstname"
-                       title="Applicant First Name"
-                       autocomplete="given-name"
-                       required>
+                <input
+                    type="text"
+                    name="firstname"
+                    title="Enter your first name"
+                    autocomplete="given-name"
+                    required>
             </label>
 
             <label>
                 Last Name
-                <input type="text"
-                       name="lastname"
-                       title="Applicant Last Name"
-                       autocomplete="family-name"
-                       required>
+                <input
+                    type="text"
+                    name="lastname"
+                    title="Enter your last name"
+                    autocomplete="family-name"
+                    required>
             </label>
 
             <label>
                 Organization Title
-                <input type="text"
-                       name="orgtitle"
-                       title="Organization Title"
-                       autocomplete="organization-title"
-                       pattern="[A-Za-z\s\-]{7,}"
-                       placeholder="Marketing Manager">
+                <input
+                    type="text"
+                    name="orgtitle"
+                    title="Organization title"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}"
+                >
             </label>
 
             <label>
                 Email Address
-                <input type="email"
-                       name="email"
-                       title="Email Address"
-                       autocomplete="email"
-                       placeholder="example@email.com"
-                       required>
+                <input
+                    type="email"
+                    name="email"
+                    title="Enter email address"
+                    autocomplete="email"
+                    placeholder="example@email.com"
+                    required>
             </label>
 
             <label>
                 Mobile Phone
-                <input type="tel"
-                       name="phone"
-                       title="Mobile Phone Number"
-                       autocomplete="tel"
-                       required>
+                <input
+                    type="tel"
+                    name="phone"
+                    title="Enter mobile phone number"
+                    autocomplete="tel"
+                    required>
             </label>
 
             <label>
                 Business Name
-                <input type="text"
-                       name="business"
-                       title="Business Name"
-                       autocomplete="organization"
-                       required>
+                <input
+                    type="text"
+                    name="business"
+                    title="Business Name"
+                    autocomplete="organization"
+                    required>
             </label>
 
             <label>
                 Membership Level
-                <select name="membership" required>
-                    <option value="">Choose One</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
+
+                <select name="membership">
+
+                    <option value="np">
+                        NP Membership
+                    </option>
+
+                    <option value="bronze">
+                        Bronze Membership
+                    </option>
+
+                    <option value="silver">
+                        Silver Membership
+                    </option>
+
+                    <option value="gold">
+                        Gold Membership
+                    </option>
+
                 </select>
+
             </label>
 
             <label>
                 Business Description
+
                 <textarea
                     name="description"
                     title="Business Description"
                     rows="5"></textarea>
+
             </label>
 
-            <input type="hidden" id="timestamp" name="timestamp">
+            <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp">
 
-            <input type="submit" value="Apply for Membership">
+            <input
+                type="submit"
+                value="Submit Membership Application">
 
         </form>
 
-    </section>
+        <section class="membership-cards">
 
-    <aside class="membership-cards">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <a href="#" onclick="document.getElementById('npModal').showModal()">
+                    View Benefits
+                </a>
+            </div>
 
-        <div class="card">
-            <h3>NP Membership</h3>
-            <a href="#" onclick="document.getElementById('npModal').showModal()">
-                Learn More
-            </a>
-        </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="#" onclick="document.getElementById('bronzeModal').showModal()">
+                    View Benefits
+                </a>
+            </div>
 
-        <div class="card">
-            <h3>Bronze Membership</h3>
-            <a href="#" onclick="document.getElementById('bronzeModal').showModal()">
-                Learn More
-            </a>
-        </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="#" onclick="document.getElementById('silverModal').showModal()">
+                    View Benefits
+                </a>
+            </div>
 
-        <div class="card">
-            <h3>Silver Membership</h3>
-            <a href="#" onclick="document.getElementById('silverModal').showModal()">
-                Learn More
-            </a>
-        </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="#" onclick="document.getElementById('goldModal').showModal()">
+                    View Benefits
+                </a>
+            </div>
 
-        <div class="card">
-            <h3>Gold Membership</h3>
-            <a href="#" onclick="document.getElementById('goldModal').showModal()">
-                Learn More
-            </a>
-        </div>
+        </section>
 
-    </aside>
+    </div>
+
+    <dialog id="npModal">
+        <h2>NP Membership</h2>
+        <p>No membership fee.</p>
+        <button onclick="npModal.close()">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal">
+        <h2>Bronze Membership</h2>
+        <p>Training events and networking opportunities.</p>
+        <button onclick="bronzeModal.close()">Close</button>
+    </dialog>
+
+    <dialog id="silverModal">
+        <h2>Silver Membership</h2>
+        <p>All Bronze benefits plus event discounts.</p>
+        <button onclick="silverModal.close()">Close</button>
+    </dialog>
+
+    <dialog id="goldModal">
+        <h2>Gold Membership</h2>
+        <p>Premium advertising, spotlight features and VIP events.</p>
+        <button onclick="goldModal.close()">Close</button>
+    </dialog>
 
 </main>
 
-<!-- NP Modal -->
-<dialog id="npModal">
-    <h2>NP Membership</h2>
-    <p>No fee. Perfect for nonprofit organizations.</p>
-    <button onclick="npModal.close()">Close</button>
-</dialog>
+    <footer>
 
-<!-- Bronze Modal -->
-<dialog id="bronzeModal">
-    <h2>Bronze Membership</h2>
-    <p>Networking events and directory listing.</p>
-    <button onclick="bronzeModal.close()">Close</button>
-</dialog>
+        <div class="footer-content">
 
-<!-- Silver Modal -->
-<dialog id="silverModal">
-    <h2>Silver Membership</h2>
-    <p>Includes Bronze benefits plus training discounts.</p>
-    <button onclick="silverModal.close()">Close</button>
-</dialog>
+            <div class="footer-info">
 
-<!-- Gold Modal -->
-<dialog id="goldModal">
-    <h2>Gold Membership</h2>
-    <p>Premium advertising, spotlight placement and VIP events.</p>
-    <button onclick="goldModal.close()">Close</button>
-</dialog>
+                <h3>Ibadan Chamber of Commerce</h3>
+
+                <p>15 Ring Road, Ibadan</p>
+
+                <p>info@ibadanchamber.org</p>
+
+                <p>(+234) 800-000-0000</p>
+
+            </div>
+
+            <div class="socials">
+
+                <a href="#">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+
+            </div>
+
+            <div class="footer-dev">
+
+                <p>
+                    WDD231 Class Project
+                </p>
+
+                <p>
+                    © <span id="year"></span>
+                    Oluwafemi Akanbi
+                </p>
+
+                <p id="lastModified"></p>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
