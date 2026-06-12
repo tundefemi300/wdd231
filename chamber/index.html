@@ -8,8 +8,7 @@
 
     <title>Ibadan Chamber of Commerce</title>
 
-    <meta name="description"
-        content="Website showcasing Ibadan Chamber of Commerce ">
+    <meta name="description" content="Website showcasing Ibadan Chamber of Commerce ">
 
     <meta name="author" content="Oluwafemi Akanbi">
 
@@ -36,6 +35,9 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/chambers.js" defer></script>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -86,142 +88,70 @@
     </header>
 
     <section class="hero">
+        <img src="images/chamber-banner.png" alt="Ibadan City">
 
-        <img src="images/chamber-banner.png" alt="Ibadan City Banner">
+        <div class="hero-content">
+            <h1>Ibadan Chamber of Commerce</h1>
 
-        <button class="hero-btn2">
-            Keynote Tickets
-        </button>
-
+        
+   <a href="join.html" class="hero-btn">
+                Join the Chamber
+            </a>
+   
+         
+        </div>
     </section>
 
     <main>
 
-        <h1>Ibadan Chamber of Commerce</h1>
-
-        <section class="info-grid">
+        <section class="home-grid">
 
             <article class="card">
-
-                <h3>Events</h3>
+                <h3>Current Events</h3>
 
                 <div class="card-content">
+                    <h4>Ibadan Business Summit 2026</h4>
 
                     <p>
-                        Chamber networking event this Friday.
+                        Connect with entrepreneurs, investors,
+                        and industry leaders shaping the future
+                        of business in Oyo State.
                     </p>
 
                     <p>
-                        Business growth seminar next week.
+                        Date: July 15, 2026
                     </p>
-
                 </div>
-
             </article>
 
             <article class="card">
-
                 <h3>Current Weather</h3>
 
-                <div class="weather">
+                <div class="card-content">
 
-                    <img src="images/weather.jpg" alt="Weather Icon">
+                    <p id="current-temp">
+                        Loading...
+                    </p>
 
-                    <div>
-
-                        <p>75°F</p>
-
-                        <p>Partly Cloudy</p>
-
-                        <p>High: 85°</p>
-
-                        <p>Low: 52°</p>
-
-                    </div>
+                    <p id="weather-desc"></p>
 
                 </div>
-
             </article>
 
             <article class="card">
+                <h3>3-Day Forecast</h3>
 
-                <h3>Weather Forecast</h3>
-
-                <div class="card-content">
-
-                    <p>Today: 90°F</p>
-
-                    <p>Wednesday: 89°F</p>
-
-                    <p>Thursday: 68°F</p>
-
-                </div>
+                <div id="forecast" class="card-content"></div>
 
             </article>
 
         </section>
 
-        <section id="members" class="members-grid">
+        <section>
 
-            <article class="member-card">
+            <h2>Business Spotlights</h2>
 
-                <h3>TechNova Solutions</h3>
-
-                <img src="images/technova.jpg" alt="TechNova">
-
-                <p>
-                    EMAIL: info@technova.com
-                </p>
-
-                <p>
-                    PHONE: +234 801 111 1111
-                </p>
-
-                <p>
-                    URL: technova.com
-                </p>
-
-            </article>
-
-            <article class="member-card">
-
-                <h3>FreshMart Stores</h3>
-
-                <img src="images/freshmart.jpg" alt="FreshMart">
-
-                <p>
-                    EMAIL: info@freshmart.com
-                </p>
-
-                <p>
-                    PHONE: +234 802 222 2222
-                </p>
-
-                <p>
-                    URL: freshmart.com
-                </p>
-
-            </article>
-
-            <article class="member-card">
-
-                <h3>Skyline Hotels</h3>
-
-                <img src="images/skyline.jpg" alt="Skyline Hotels">
-
-                <p>
-                    EMAIL: info@skyline.com
-                </p>
-
-                <p>
-                    PHONE: +234 803 333 3333
-                </p>
-
-                <p>
-                    URL: skyline.com
-                </p>
-
-            </article>
+            <div id="spotlights" class="members-grid"></div>
 
         </section>
 

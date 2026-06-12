@@ -47,4 +47,8 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .home-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 }

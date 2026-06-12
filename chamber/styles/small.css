@@ -93,7 +93,7 @@ header {
     object-fit: cover;
 }
 
-.hero-btn {
+.hero-btn2 {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -206,4 +206,35 @@ footer {
 
 .socials img {
     width: 40px;
+}
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background: #444;
 }
