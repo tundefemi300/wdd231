@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<Video> videos = new List<Video>();
+
+        Video video1 = new Video("Learning C#", "Code Academy", 600);
+        video1.AddComment(new Comment("John", "Great tutorial!"));
+        video1.AddComment(new Comment("Sarah", "Very helpful."));
+        video1.AddComment(new Comment("Mike", "Thanks for sharing."));
+        videos.Add(video1);
+
+        Video video2 = new Video("How to Cook Jollof Rice", "Chef Tunde", 480);
+        video2.AddComment(new Comment("Amina", "Looks delicious."));
+        video2.AddComment(new Comment("David", "I'll try this recipe."));
+        video2.AddComment(new Comment("Grace", "Excellent explanation."));
+        videos.Add(video2);
+
+        Video video3 = new Video("Football Highlights", "Sports TV", 300);
+        video3.AddComment(new Comment("James", "Amazing goals!"));
+        video3.AddComment(new Comment("Peter", "Best match this season."));
+        video3.AddComment(new Comment("Mary", "Enjoyed every minute."));
+        videos.Add(video3);
+
+        foreach (Video video in videos)
+        {
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine($"Title: {video.GetTitle()}");
+            Console.WriteLine($"Author: {video.GetAuthor()}");
+            Console.WriteLine($"Length: {video.GetLength()} seconds");
+            Console.WriteLine($"Comments: {video.GetCommentCount()}");
+
+            foreach (Comment comment in video.GetComments())
+            {
+                Console.WriteLine($"- {comment.GetName()}: {comment.GetText()}");
+            }
+
+            Console.WriteLine();
+        }
+    }
+}

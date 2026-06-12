@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Nigeria Site Plan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0B6E4F;
+    --secondary: #F4A261;
+    --background: #F8F9FA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--secondary);
+    border-radius: 8px;
+}
+
+.wireframe {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    white-space: pre;
+    font-family: monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Website Planning Document</h1>
+
+<section>
+<h2>Site Name</h2>
+<p><strong>Explore Nigeria Travel Guide</strong></p>
+<p>
+The site name was selected because it clearly communicates the purpose
+of helping visitors discover tourist attractions, culture, and travel
+destinations across Nigeria.
+</p>
+</section>
+
+<section>
+<h2>Site Purpose</h2>
+<p>
+This website will provide information about popular tourist destinations,
+cultural attractions, travel tips, and local events throughout Nigeria.
+Visitors can learn about places to visit and plan future trips.
+</p>
+</section>
+
+<section>
+<h2>Scenarios</h2>
+<ul>
+<li>What are the best tourist attractions to visit in Nigeria?</li>
+<li>What travel tips should I know before visiting Lagos?</li>
+<li>Which destinations are suitable for family vacations?</li>
+</ul>
+</section>
+
+<section>
+<h2>Color Scheme</h2>
+<ul>
+<li><strong>#0B6E4F (Green)</strong> – Used for headings, navigation, and accents.</li>
+<li><strong>#F4A261 (Orange)</strong> – Used for highlights, borders, and call-to-action elements.</li>
+<li><strong>#F8F9FA (Light Gray)</strong> – Used as the page background.</li>
+</ul>
+</section>
+
+<section>
+<h2>Typography</h2>
+<ul>
+<li><strong>Poppins</strong> – Used for page headings and section titles.</li>
+<li><strong>Roboto</strong> – Used for body text and general content.</li>
+</ul>
+</section>
+
+<section>
+<h2>Wireframe - Mobile View</h2>
+
+<div class="wireframe">
+--------------------------------
+| LOGO                         |
+--------------------------------
+| Navigation Menu              |
+--------------------------------
+| Hero Image                   |
+--------------------------------
+| Featured Destination         |
+--------------------------------
+| Travel Tips                  |
+--------------------------------
+| Footer                       |
+--------------------------------
+</div>
+</section>
+
+<section>
+<h2>Wireframe - Desktop View</h2>
+
+<div class="wireframe">
+----------------------------------------------------
+| LOGO               | Navigation Menu             |
+----------------------------------------------------
+|                HERO IMAGE                         |
+----------------------------------------------------
+| Destination 1 | Destination 2 | Destination 3    |
+----------------------------------------------------
+| Travel Tips and Information                       |
+----------------------------------------------------
+| Footer                                            |
+----------------------------------------------------
+</div>
+</section>
+
+<footer>
+© 2026 Explore Nigeria Travel Guide Site Plan
+</footer>
+
+</body>
+</html>

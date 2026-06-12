@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="styles/directory.css">
+<script src="scripts/directory.js" defer></script>
+```javascript
+async function getMembers() {
+  const response = await fetch('data/members.json');
+  const members = await response.json();
+
+  displayMembers(members);
+}
+
+getMembers();
+```
+
+```json
+[
+  {
+    "name": "John Doe",
+    "business": "Doe's Bakery",
+    "address": "123 Main St, Anytown, USA",
+    "phone": "(555) 123-4567",
+    "email": "
