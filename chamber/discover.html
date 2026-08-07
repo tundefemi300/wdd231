@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Rexburg | Rexburg Chamber of Commerce</title>
+  <meta name="description" content="Discover eight must-see places in Rexburg, Idaho, featured by the local Chamber of Commerce.">
+  <meta name="author" content="Your Name">
+
+  <!-- Reuse your existing site stylesheet(s) -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Discover-page-specific styles (grid areas, cards, hover effect) -->
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <!-- type="module" is required so discover.mjs can import data/discover.mjs -->
+  <script type="module" src="discover.mjs" defer></script>
+</head>
+<body>
+
+  <!-- ============ HEADER (reuse your existing markup) ============ -->
+  <header class="site-header">
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Rexburg Chamber of Commerce logo" width="80" height="80">
+      <h1>Rexburg Chamber of Commerce</h1>
+    </div>
+
+    <button id="menu-button" aria-label="Open navigation menu">&#9776;</button>
+
+    <!-- ============ NAV (reuse your existing markup / wayfinding) ============ -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html" class="current" aria-current="page">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Rexburg</h1>
+
+    <p class="discover-intro">
+      Rexburg is a growing community along the Teton River known for its outdoor
+      recreation, small-town charm, and thriving local businesses. Here are eight
+      places worth exploring, curated by the Chamber of Commerce.
+    </p>
+
+    <!-- Filled dynamically with localStorage-based visit message -->
+    <p id="visit-message" class="visit-message"></p>
+
+    <!-- Cards are built here by discover.mjs -->
+    <section id="discover-grid" class="discover-grid"></section>
+  </main>
+
+  <!-- ============ FOOTER (reuse your existing markup) ============ -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Rexburg Chamber of Commerce | Your Name | WDD231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+      document.querySelector("#lastModified").textContent = document.lastModified;
+    </script>
+  </footer>
+
+</body>
+</html>

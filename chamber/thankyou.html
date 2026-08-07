@@ -1,179 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thank You - Ibadan Chamber of Commerce</title>
-
-    <meta name="description" content="Discover local businesses, events, networking, and chamber resources in Ibadan, Nigeria now.">
-
-    <meta name="author" content="Oluwafemi Akanbi">
-
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
-
-    <link rel="icon" href="images/favicon.ico">
-    <meta property="og:description" content="Explore local businesses, events, and opportunities in Ibadan.">
-
-    <meta property="og:image" content="https://tundefemi300.github.io/wdd231/chamber/images/chamber-banner.png">
-
-    <meta property="og:url" content="https://tundefemi300.github.io/wdd231/chamber/">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/normalize.css">
-
-    <link rel="stylesheet" href="styles/small.css">
-
-    <link rel="stylesheet" href="styles/larger.css">
-
-    <script src="scripts/chambers.js" defer></script>
-<script src="scripts/join.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+<link rel="stylesheet" href="styles/join.css">
+<script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-
-        <div class="top-bar">
-
-            <div class="logo-area">
-
-                <img src="images/logo.png" alt="Ibadan Chamber Logo">
-
-                <div>
-                    <h2>Ibadan Chamber</h2>
-                    <p>of Commerce</p>
-                </div>
-
-            </div>
-
-            <button id="menuBtn" aria-label="Menu Button">
-
-                ☰
-
-            </button>
-
-        </div>
-
-        <nav id="navMenu" class="navigation">
-
-            <a href="index.html" class="active">
-                Home
-            </a>
-
-            <a href="directory.html">
-                Directory
-            </a>
-
-            <a href="join.html">
-                Join
-            </a>
-
-            <a href="discover.html">
-                Discover
-            </a>
-
-        </nav>
-
-    </header>
-
-    <section class="hero">
-        <img src="images/chamber-banner.png" alt="Ibadan City">
-
-        <div class="hero-content">
-           
-        
-     <h2>Ibadan Chamber of Commerce</h2>
-   
-         
-        </div>
-    </section>
+<header>
+    <h1>Thank You For Applying!</h1>
+</header>
 
 <main>
 
-    <h1>Thank You</h1>
+    <h2>Your Submitted Information</h2>
 
     <div id="results"></div>
 
 </main>
 
-<script>
-
-const params =
-    new URLSearchParams(window.location.search);
-
-document.querySelector("#results").innerHTML = `
-<p><strong>First Name:</strong> ${params.get("firstname")}</p>
-<p><strong>Last Name:</strong> ${params.get("lastname")}</p>
-<p><strong>Email:</strong> ${params.get("email")}</p>
-<p><strong>Phone:</strong> ${params.get("phone")}</p>
-<p><strong>Business:</strong> ${params.get("business")}</p>
-<p><strong>Timestamp:</strong> ${params.get("timestamp")}</p>
-`;
-
-</script>
-
-    <footer>
-
-        <div class="footer-content">
-
-            <div class="footer-info">
-
-                <h3>Ibadan Chamber of Commerce</h3>
-
-                <p>15 Ring Road, Ibadan</p>
-
-                <p>info@ibadanchamber.org</p>
-
-                <p>(+234) 800-000-0000</p>
-
-            </div>
-
-            <div class="socials">
-
-                <a href="#">
-                    <img src="images/facebook.jpg" alt="Facebook">
-                </a>
-
-                <a href="#">
-                    <img src="images/twitter.png" alt="Twitter">
-                </a>
-
-                <a href="#">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </a>
-
-            </div>
-
-            <div class="footer-dev">
-
-                <p>
-                    WDD231 Class Project
-                </p>
-
-                <p>
-                    © <span id="year"></span>
-                    Oluwafemi Akanbi
-                </p>
-
-                <p id="lastModified"></p>
-
-            </div>
-
-        </div>
-
-    </footer>
-
 </body>
-
 </html>
