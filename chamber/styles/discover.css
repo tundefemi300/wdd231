@@ -1,0 +1,286 @@
+
+
+.discover-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f1f5f2;
+}
+
+.discover-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.discover-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   VISITOR MESSAGE
+   ========================================== */
+
+.visitor-message-section {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.visitor-message {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #e8f0ea;
+    border: 1px solid #b9cdbd;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   DISCOVER CONTENT
+   ========================================== */
+
+.discover-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+}
+
+.discover-content > h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.discover-intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   SMALL SCREEN
+   320px - 640px
+   ========================================== */
+
+.discover-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+
+/* Named grid areas */
+
+.card-1 {
+    grid-area: card1;
+}
+
+.card-2 {
+    grid-area: card2;
+}
+
+.card-3 {
+    grid-area: card3;
+}
+
+.card-4 {
+    grid-area: card4;
+}
+
+.card-5 {
+    grid-area: card5;
+}
+
+.card-6 {
+    grid-area: card6;
+}
+
+.card-7 {
+    grid-area: card7;
+}
+
+.card-8 {
+    grid-area: card8;
+}
+
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
+.discover-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: white;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.discover-card img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.discover-card address {
+
+    padding: 1rem 1rem 0;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+.discover-card p {
+
+    padding: 0 1rem;
+
+    line-height: 1.6;
+
+    flex-grow: 1;
+}
+
+.discover-card button {
+
+    margin: 1rem;
+
+    padding: 0.8rem 1rem;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   MEDIUM SCREEN
+   641px - 1024px
+   ========================================== */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+
+        gap: 1.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   LARGE SCREEN
+   1025px AND ABOVE
+   ========================================== */
+
+@media screen and (min-width: 1025px) {
+
+    .discover-grid {
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card8 card8 card6";
+
+        gap: 1.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   IMAGE HOVER EFFECT
+   DESKTOP ONLY
+   ========================================== */
+
+@media screen and (min-width: 641px) {
+
+    .discover-card figure img {
+
+        transition:
+            transform 0.4s ease,
+            filter 0.4s ease;
+    }
+
+    .discover-card figure:hover img {
+
+        transform: scale(1.08);
+
+        filter: brightness(0.8);
+    }
+
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+.discover-card button:focus-visible {
+
+    outline: 3px solid #222;
+
+    outline-offset: 3px;
+}

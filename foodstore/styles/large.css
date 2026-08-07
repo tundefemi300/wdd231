@@ -1,0 +1,4 @@
+
+@media(min-width:768px){
+#products{grid-template-columns:repeat(3,1fr);}
+}

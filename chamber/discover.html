@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:description" content="Explore local businesses, events, and opportunities in Ibadan.">
+
+    <meta property="og:image" content="https://tundefemi300.github.io/wdd231/chamber/images/chamber-banner.png">
+
+    <meta property="og:url" content="https://tundefemi300.github.io/wdd231/chamber/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="logo-area">
+
+                <img src="images/logo.png" alt="Ibadan Chamber Logo">
+
+                <div>
+                    <h2>Ibadan Chamber</h2>
+                    <p>of Commerce</p>
+                </div>
+
+            </div>
+
+            <button id="menuBtn" aria-label="Menu Button">
+
+                ☰
+
+            </button>
+
+        </div>
+
+        <nav id="navMenu" class="navigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="directory.html">
+                Directory
+            </a>
+
+            <a href="join.html">
+                Join
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="discover-hero">
+            <h2>Discover Ibadan</h2>
+
+            <p>
+                Explore the history, culture, landmarks, and natural attractions
+                that make Ibadan a unique destination in southwestern Nigeria.
+            </p>
+        </section>
+
+
+        <section class="visitor-message-section">
+
+            <div id="visitor-message" class="visitor-message">
+                Welcome! Let us know if you have any questions.
+            </div>
+
+        </section>
+
+
+        <section class="discover-content">
+
+            <h2>Places to Explore</h2>
+
+            <p class="discover-intro">
+                From historic landmarks to gardens, museums, wildlife,
+                and scenic viewpoints, Ibadan offers visitors many places
+                to discover.
+            </p>
+
+            <div id="discover-grid" class="discover-grid">
+                <!-- Attraction cards are generated with JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+
+                <h3>Ibadan Chamber of Commerce</h3>
+
+                <p>15 Ring Road, Ibadan</p>
+
+                <p>info@ibadanchamber.org</p>
+
+                <p>(+234) 800-000-0000</p>
+
+            </div>
+
+            <div class="socials">
+
+                <a href="#">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+
+            </div>
+
+            <div class="footer-dev">
+
+                <p>
+                    WDD231 Class Project
+                </p>
+
+                <p>
+                    © <span id="year"></span>
+                    Oluwafemi Akanbi
+                </p>
+
+                <p id="lastModified"></p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
