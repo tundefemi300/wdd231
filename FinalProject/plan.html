@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Plan an Ibadan visit by choosing interests, travel timing, and attractions you want to explore.">
+<meta name="author" content="Oluwafemi Akanbi">
+<meta property="og:title" content="Plan Your Ibadan Visit | Explore Ibadan">
+<meta property="og:description" content="Create a simple plan for exploring Ibadan attractions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.svg">
+<title>Plan Your Visit | Explore Ibadan</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+<script type="module" src="js/plan.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html"><span class="brand-mark">EI</span><span><strong>Explore Ibadan</strong><small>History • Culture • Discovery</small></span></a>
+<button class="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+<nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="attractions.html">Attractions</a><a class="active" href="plan.html">Plan Your Visit</a></nav>
+</div></header>
+<main>
+<section class="page-hero"><p class="eyebrow">PLAN AHEAD</p><h1>Create your visit request</h1><p>Tell us what you want to experience. Your preferences are remembered in this browser.</p></section>
+<section class="section two-column">
+<div><p class="eyebrow">YOUR PREFERENCES</p><h2>What kind of day sounds good?</h2><p>Choose an interest and preferred trip length. The site stores these choices locally so they remain available when you return.</p><div id="saved-preference" class="saved-box" aria-live="polite"></div></div>
+<form id="visit-form" action="form-action.html" method="get">
+<label for="name">Name<input id="name" name="name" required autocomplete="name"></label>
+<label for="email">Email<input id="email" name="email" type="email" required autocomplete="email"></label>
+<label for="interest">Main interest<select id="interest" name="interest" required><option value="">Choose one</option><option>History</option><option>Culture</option><option>Nature</option><option>Recreation</option></select></label>
+<label for="days">Trip length<select id="days" name="days" required><option value="">Choose one</option><option>1 day</option><option>2 days</option><option>3 days</option><option>4+ days</option></select></label>
+<label for="message">What would you like to explore?<textarea id="message" name="message" rows="5" required></textarea></label>
+<label class="check"><input id="updates" name="updates" type="checkbox" value="yes"> I would like occasional local travel updates.</label>
+<button class="button primary" type="submit">Send visit request</button>
+</form>
+</section>
+<section class="section visit-tips"><p class="eyebrow">GOOD TO KNOW</p><h2>Travel thoughtfully</h2><div class="tip-grid"><article><h3>Check opening information</h3><p>Hours, admission, events, and access conditions can change. Confirm directly with a venue before travelling.</p></article><article><h3>Respect heritage</h3><p>Follow site rules and ask permission before photographing people or restricted cultural spaces.</p></article><article><h3>Keep your plans flexible</h3><p>Allow extra time for city traffic and weather when arranging a day around several locations.</p></article></div></section>
+</main>
+<footer class="site-footer"><div class="footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">EI</span><span><strong>Explore Ibadan</strong><small>Discover the city with curiosity.</small></span></a></div><div><h2>Explore</h2><a href="index.html">Home</a><a href="attractions.html">Attractions</a><a href="attributions.html">Attributions</a></div><div><h2>Course</h2><p>WDD 231 Individual Website Project</p><a href="https://www.youtube.com/" rel="noopener">Project video</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Explore Ibadan</span><span>Your preferences stay in your browser.</span></div></footer>
+</body>
+</html>

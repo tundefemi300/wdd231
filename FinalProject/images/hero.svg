@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+<rect width="900" height="700" fill="#e7dfcf"/>
+<circle cx="690" cy="130" r="85" fill="#c89a45"/>
+<path d="M0 420 Q170 270 330 390 T650 360 T900 400 V700 H0Z" fill="#315c47"/>
+<path d="M0 500 Q180 390 350 480 T650 455 T900 490 V700 H0Z" fill="#55765c"/>
+<rect x="350" y="205" width="170" height="295" fill="#fffdf8"/>
+<rect x="380" y="155" width="110" height="345" fill="#d2b47a"/>
+<path d="M370 155 L435 90 L500 155Z" fill="#1f4031"/>
+<g fill="#20251f"><rect x="398" y="190" width="18" height="28"/><rect x="445" y="190" width="18" height="28"/><rect x="398" y="245" width="18" height="28"/><rect x="445" y="245" width="18" height="28"/><rect x="398" y="300" width="18" height="28"/><rect x="445" y="300" width="18" height="28"/></g>
+<text x="55" y="610" font-family="Georgia,serif" font-size="48" font-weight="700" fill="#fffdf8">Explore Ibadan</text>
+</svg>

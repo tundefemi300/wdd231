@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+<rect width="640" height="400" fill="#e9e2d1"/>
+<rect y="255" width="640" height="145" fill="#315c47"/>
+<path d="M0 260 Q120 170 230 250 T450 220 T640 245 V400 H0Z" fill="#6d8b68"/>
+<circle cx="500" cy="90" r="48" fill="#c89a45"/>
+<rect x="90" y="135" width="140" height="125" rx="6" fill="#fffdf8"/>
+<rect x="120" y="105" width="80" height="155" fill="#d2b47a"/>
+<path d="M115 105 L160 65 L205 105Z" fill="#315c47"/>
+<text x="320" y="315" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#fff">Oje Market</text>
+<text x="320" y="345" font-family="Arial,sans-serif" font-size="17" fill="#edf3ee">Culture</text>
+</svg>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "Mapo Hall",
+    "category": "History",
+    "type": "Civic landmark",
+    "area": "Mapo Hill",
+    "location": "Mapo Hill, Ibadan",
+    "description": "A prominent historic civic building on Mapo Hill and an important part of Ibadan's architectural and municipal story.",
+    "image": "images/attraction-01.svg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Bower's Tower",
+    "category": "History",
+    "type": "Observation tower",
+    "area": "Oke-Are",
+    "location": "Oke-Are, Ibadan",
+    "description": "A historic tower on elevated ground associated with views across Ibadan and the city's early twentieth-century history.",
+    "image": "images/attraction-02.svg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Cocoa House",
+    "category": "History",
+    "type": "Historic high-rise",
+    "area": "Dugbe",
+    "location": "Dugbe, Ibadan",
+    "description": "A landmark high-rise associated with the commercial importance of cocoa and the economic history of Western Nigeria.",
+    "image": "images/attraction-03.svg",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "National Museum of Unity",
+    "category": "Culture",
+    "type": "Museum",
+    "area": "Aleshinloye",
+    "location": "National Museum Road, Ibadan",
+    "description": "A museum where visitors can encounter Nigerian cultural objects and learn about artistic and historical traditions.",
+    "image": "images/attraction-04.svg",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Agodi Gardens",
+    "category": "Nature",
+    "type": "Garden and leisure park",
+    "area": "Mokola",
+    "location": "Secretariat Road, Mokola Hill, Ibadan",
+    "description": "A green urban recreation space with gardens and leisure facilities suitable for relaxing and spending time outdoors.",
+    "image": "images/attraction-05.svg",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "University of Ibadan Zoological Garden",
+    "category": "Nature",
+    "type": "Zoological garden",
+    "area": "University of Ibadan",
+    "location": "University of Ibadan, Ibadan",
+    "description": "A university zoological garden combining wildlife conservation, education, research, and leisure.",
+    "image": "images/attraction-06.svg",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "name": "IITA Forest Reserve",
+    "category": "Nature",
+    "type": "Forest reserve",
+    "area": "IITA",
+    "location": "International Institute of Tropical Agriculture, Ibadan",
+    "description": "A green landscape associated with biodiversity, ecological research, and opportunities to appreciate nature around the city.",
+    "image": "images/attraction-07.svg",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Trans-Amusement Park",
+    "category": "Recreation",
+    "type": "Amusement park",
+    "area": "Bodija",
+    "location": "Bodija Road, Ibadan",
+    "description": "A family-oriented recreation destination with amusement and leisure activities.",
+    "image": "images/attraction-08.svg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Eleyele Lake",
+    "category": "Nature",
+    "type": "Waterfront",
+    "area": "Eleyele",
+    "location": "Eleyele, Ibadan",
+    "description": "A major inland water body and waterfront landscape that forms part of Ibadan's natural and urban environment.",
+    "image": "images/attraction-09.svg",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "University of Ibadan",
+    "category": "Education",
+    "type": "Historic university",
+    "area": "Sasa / Samonda",
+    "location": "University of Ibadan, Ibadan",
+    "description": "Nigeria's first university and a major educational landmark with a long institutional history and notable campus spaces.",
+    "image": "images/attraction-10.svg",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Dugbe Market",
+    "category": "Culture",
+    "type": "Market district",
+    "area": "Dugbe",
+    "location": "Dugbe, Ibadan",
+    "description": "A central commercial district where visitors can experience the energy of one of Ibadan's traditional business areas.",
+    "image": "images/attraction-11.svg",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Oje Market",
+    "category": "Culture",
+    "type": "Traditional market",
+    "area": "Oje",
+    "location": "Oje, Ibadan",
+    "description": "A long-established market area offering an opportunity to observe local commerce, fabrics, food, and everyday city life.",
+    "image": "images/attraction-12.svg",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "Cultural Centre, Mokola",
+    "category": "Culture",
+    "type": "Cultural venue",
+    "area": "Mokola",
+    "location": "Mokola, Ibadan",
+    "description": "A cultural venue associated with arts, heritage, performances, and community cultural activities.",
+    "image": "images/attraction-13.svg",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Liberty Stadium",
+    "category": "Recreation",
+    "type": "Sports landmark",
+    "area": "Oke-Ado",
+    "location": "Oke-Ado, Ibadan",
+    "description": "A major sports landmark with an important place in Nigeria's sporting history and Ibadan's urban identity.",
+    "image": "images/attraction-14.svg",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "Olubadan Palace",
+    "category": "Culture",
+    "type": "Royal heritage site",
+    "area": "Ibadan traditional core",
+    "location": "Ibadan, Oyo State",
+    "description": "A royal heritage site connected with the traditional institution and cultural history of Ibadan.",
+    "image": "images/attraction-15.svg",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "St. Peter's Cathedral, Aremo",
+    "category": "History",
+    "type": "Historic church",
+    "area": "Aremo",
+    "location": "Aremo, Ibadan",
+    "description": "A historic religious landmark that forms part of Ibadan's built heritage and the city's long-established Christian institutions.",
+    "image": "images/attraction-16.svg",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Government House, Ibadan",
+    "category": "History",
+    "type": "Civic landmark",
+    "area": "Agodi",
+    "location": "Agodi, Ibadan",
+    "description": "An important civic site within the administrative landscape of Oyo State and the city's modern political history.",
+    "image": "images/attraction-17.svg",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "name": "Irefin Palace",
+    "category": "Culture",
+    "type": "Heritage site",
+    "area": "Irefin",
+    "location": "Irefin, Ibadan",
+    "description": "A traditional heritage site associated with Ibadan's historic compounds and the city's indigenous political and social structures.",
+    "image": "images/attraction-18.svg",
+    "featured": false
+  }
+]
